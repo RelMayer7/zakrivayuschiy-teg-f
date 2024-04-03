@@ -118,7 +118,7 @@
   content: "▶";
   position: absolute;
   width: 14px;
-  height: 14px; 
+  height: 14px;
   inset-inline-start: -16px;
   inset-block-start: -1px;
   animation: arrow 0.5s infinite alternate ease-in-out;
