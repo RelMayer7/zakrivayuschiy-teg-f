@@ -360,5 +360,44 @@
   min-height: 38px;
 }
 
+@media (width <= 375px) {
+  
+  .logo {
+    right: 10px;
+    top: 22px;
+  }
+
+  .card__text {
+    margin: 18px 25px 26px;
+  }
+  
+  .card__buttons {
+    margin: 26px 25px 22px;
+  }
+
+  .footer__save-button {
+    flex-direction: column;
+  }
+
+  .floppy {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dialog__floppy {
+    inline-size: 341px;
+    block-size: 195px;
+  }
+
+  .dialog__floppy-wrapper {
+    padding: 0 40px;
+  }
+
+  .dialog__floppy-button {
+    min-width: 257px;
+    min-height: 38px;
+  }
+
+}
 
 
