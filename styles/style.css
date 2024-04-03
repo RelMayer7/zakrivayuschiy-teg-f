@@ -15,19 +15,19 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  font-family: var(--main-font, sans-serif);
-  font-variation-settings: "wght" var(--card-text-weight);
-  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--accent-color);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--background-color);
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  font-variation-settings: "wght" var(--card-text-weight);
 }
 
 .content__section {
@@ -38,10 +38,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: var(--accent-font);
   margin-block-start: 100px;
-  padding-block-start: clamp(118px, 25%, 134px);
   border: 2px solid var(--accent-color);
+  padding-block-start: clamp(118px, 25%, 134px);
+  font-family: var(--accent-font);
   background-color: var(--background-color);
 }
 
@@ -68,28 +68,28 @@
 }
 
 .theme-menu__button {
-  font-size: 14px;
-  background-color: transparent;
-  border: none;
   position: relative;
-  text-transform: uppercase;
   margin-inline-start: 20px;
-  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .theme-menu__button::after {
   content: '';
-  display: block;
   position: absolute;
+  bottom: -2px;
+  left: 0;
+  display: block;
   width: 100%;
   height: 2px;
-  left: 0;
-  bottom: -2px;
   background-color: var(--accent-color);
+  transition: transform 0.3s linear;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s linear;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -119,16 +119,16 @@
   position: absolute;
   width: 14px;
   height: 14px;
+  animation: arrow 0.5s infinite alternate ease-in-out;
   inset-inline-start: -20px;
   inset-block-start: -1px;
-  animation: arrow 0.5s infinite alternate ease-in-out;
 }
 
 .main {
-  margin-block-start: 100px;
   display: flex;
   flex-direction: column;
   gap: 48px;
+  margin-block-start: 100px;
 }
 
 .card {
@@ -137,10 +137,10 @@
 }
 
 .card__title {
-  font-variation-settings: "wght" var(--card-title-weght);
+  padding: 5px 10px;
   font-size: 18px;
   line-height: 1.2;
-  padding: 5px 10px;
+  font-variation-settings: "wght" var(--card-title-weght);
 }
 
 .card__image-wrapper {
@@ -150,11 +150,11 @@
 }
 
 .card__image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  display: block;
 }
 
 .image-sepia {
@@ -187,25 +187,25 @@
 
 .logo {
   position: absolute;
+  top: 25px;
+  right: 20px;
+  opacity: 0.5;
   font-family: var(--accent-font);
   font-weight: var(--card-text-weight);
   font-size: 14px;
-  mix-blend-mode: hard-light;
-  opacity: 0.5;
-  right: 20px;
-  top: 25px;
   text-shadow:
   0 0 3px var(--text-shadow),
   0 0 1px var(--text-shadow)
   ;
+  mix-blend-mode: hard-light;
 }
 
 @supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px var(--text-shadow))) {
   
   .logo {
+      text-shadow: none;
       -webkit-text-stroke: 1px var(--text-shadow);
       text-stroke: 1px var(--text-shadow);
-      text-shadow: none;
   }
 } 
 
@@ -213,24 +213,24 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+  margin: 20px 25px 26px;
   font-size: 18px;
   line-height: 1.2;
-  margin: 20px 25px 26px;
 }
 
 .card__buttons {
   display: flex;
   justify-content: flex-end;
-  margin: 25px;
   gap: 10px;
+  margin: 25px;
 }
 
 .button {
-  cursor: pointer;
+  position: relative;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   transition: box-shadow 0.3s ease;
-  position: relative;
+  cursor: pointer;
 }
 
 .card__like-button {
@@ -249,14 +249,14 @@
 .button:before {
   content: '';
   position: absolute;
-  height: 100%;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--accent-color);
+  transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::before {
@@ -264,10 +264,10 @@
 }
 
 .card__icon-button {
-  background-color: transparent;
   max-width: 36px;
   max-height: 36px;
   border: 2px solid transparent;
+  background-color: transparent;
   transition: border 0.3s ease-in-out;
 }
 
@@ -284,50 +284,50 @@
 }
 
 .button__text {
-  font-size: 14px;
-  font-family: var(--accent-font);
   color: var(--text-button);
+  font-family: var(--accent-font);
+  font-size: 14px;
   line-height: 0.9;
   mix-blend-mode: difference;
 }
 
 .footer {
-  margin-block-start: 50px;
-  margin-block-end: 100px;
   display: flex;
   justify-content: center;
+  margin-block-start: 50px;
+  margin-block-end: 100px;
 }
 
 .footer__save-button {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  padding: 15px 20px;
+  align-items: center;
   gap: 10px;
+  padding: 15px 20px;
 }
 
 .floppy {
-  fill: var(--text-button);
   width: 21px;
   height: 21px;
+  fill: var(--text-button);
   mix-blend-mode: difference;
 }
 
 .dialog__floppy {
+  position: fixed;
+  border: 2px solid var(--accent-color);
+  padding: 0;
+  background-color: var(--background-color);
   inline-size: 357px;
   block-size: 193px;
-  background-color: var(--background-color);
-  border: 2px solid var(--accent-color);
-  position: fixed;
-  padding: 0;
 }
 
 .dialog__floppy[open] {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -350,11 +350,11 @@
 
 .dialog__floppy-text {
   color: var(--accent-color);
-  text-transform: uppercase;
   font-family: var(--accent-font);
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
-  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .dialog__floppy-button {
@@ -365,8 +365,8 @@
 @media (width <= 375px) {
   
   .logo {
-    right: 10px;
     top: 22px;
+    right: 10px;
   }
 
   .card__text {
