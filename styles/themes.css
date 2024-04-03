@@ -17,6 +17,7 @@
   --text-button: #FFF;
   --contour: #000;
   --heart-color: #F00;
+  --heart-hover-color: #000;
   }
 
 :root.theme-dark {
@@ -31,6 +32,7 @@
   --text-button: #00CC14;
   --contour: #00CC14;
   --heart-color: #F00;
+  --heart-hover-color: #00CC14;
   }
 
 @media (prefers-color-scheme: dark) {
@@ -47,5 +49,6 @@
     --text-button: #00CC14;
     --contour: #00CC14;
     --heart-color: #F00;
+    --heart-hover-color: #00CC14;
   }
 }
