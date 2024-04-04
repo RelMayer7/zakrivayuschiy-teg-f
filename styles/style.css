@@ -264,11 +264,14 @@
 }
 
 .card__icon-button {
-  max-width: 36px;
-  max-height: 36px;
+  min-width: 36px;
+  min-height: 36px;
   border: 2px solid transparent;
   background-color: transparent;
   transition: border 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__icon-button:hover {
