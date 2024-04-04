@@ -30,7 +30,7 @@
   font-variation-settings: "wght" var(--card-text-weight);
 }
 
-.content__section {
+.page__content {
   width: var(--content-width);
 }
 
