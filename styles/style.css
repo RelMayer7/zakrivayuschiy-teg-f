@@ -374,6 +374,7 @@
 
   .card__text {
     margin: 23px 25px;
+    line-height: 1.2;
   }
   
   .card__buttons {
