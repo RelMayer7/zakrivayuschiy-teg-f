@@ -42,6 +42,7 @@
   border: 2px solid var(--accent-color);
   padding-block-start: clamp(118px, 25%, 134px);
   font-family: var(--accent-font);
+  font-weight: 400;
   background-color: var(--background-color);
 }
 
@@ -191,7 +192,7 @@
   right: 25px;
   opacity: 0.5;
   font-family: var(--accent-font);
-  font-weight: var(--card-text-weight);
+  font-weight: 400;
   font-size: 14px;
   text-shadow:
   0 0 3px var(--text-shadow),

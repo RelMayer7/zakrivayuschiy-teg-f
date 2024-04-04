@@ -9,6 +9,7 @@
   --background-color: #FFF;
   --accent-color: #000;
   --card-title-weght: 700;
+  --card-text-weight: 400;
   --background-image: 
     repeating-linear-gradient(to right, #d3d3d3 0 2px,  transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
@@ -24,6 +25,7 @@
   --background-color: #000;
   --accent-color: #00CC14;
   --card-title-weght: 785;
+  --card-text-weight: 465;
   --background-image: 
     repeating-linear-gradient(to right, #000 0 2px,  transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
@@ -41,6 +43,7 @@
     --background-color: #000;
     --accent-color: #00CC14;
     --card-title-weght: 785;
+    --card-text-weight: 465;
     --background-image: 
     repeating-linear-gradient(to right, #000 0 2px,  transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
