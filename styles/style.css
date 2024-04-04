@@ -373,11 +373,11 @@
   }
 
   .card__text {
-    margin: 18px 25px 26px;
+    margin: 23px 25px;
   }
   
   .card__buttons {
-    margin: 26px 25px 22px;
+    margin: 23px 25px;
   }
 
   .footer__save-button {
