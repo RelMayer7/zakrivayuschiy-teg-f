@@ -362,6 +362,7 @@
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+  max-width: 234px;
 }
 
 .dialog__floppy-button {
