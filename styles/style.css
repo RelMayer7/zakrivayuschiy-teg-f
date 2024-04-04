@@ -404,6 +404,10 @@
     padding: 0 40px;
   }
 
+  .dialog__floppy-text {
+    max-width: 198px;
+  }
+
   .dialog__floppy-button {
     min-width: 257px;
     min-height: 38px;
